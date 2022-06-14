@@ -4,8 +4,7 @@ Version: 1.0.0
 Authors@R: 
     person("Economics", "and Strategic Analysis", , "econstrat.analysis@nhs.net", role = "cre")
 Description: The Economics and Strategic Analysis Team at NHS England and NHS Improvement have developed a package which implements the University of Sheffield's School of Health and Related Research's (ScHARR) definition of 'avoidable' Emergency Department attendances (Mason et al, 2017) with reference to the NHS Digital (2020) adaptation using SNOMED/HES coding.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: use_mit_license()
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
@@ -13,5 +12,5 @@ RoxygenNote: 7.1.1
 LinkingTo:
   Rcpp
 Imports:
-  Rcpp
+  Rcpp (>= 1.0.8)
 SystemRequirements: C++17
