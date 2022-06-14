@@ -5,35 +5,38 @@
 \title{Derive avoidable ED attendances as per Uni of Sheffield ScHARR avoidable attendances metric}
 \usage{
 calculateAvoidableEDAtt(
-  typeED,
-  attDisposal,
-  attCategory,
-  arrivalMode,
-  attInvestigations,
-  attTreatments,
+  data,
+  colTypeED,
+  colAttDischarge,
+  colAttCategory,
+  colArrivalMode,
+  colsInvestigations,
+  colsTreatments,
   clinicalCodeStandard = "snomed",
-  numThreads = 1
+  nthreads = getOption("ESAAvoidableAtt_nthreads")
 )
 }
 \arguments{
-\item{typeED}{list/vector: type of ED attendance}
+\item{data}{data.frame/data.table: attendance-level data.frame containing ED data}
 
-\item{attDisposal}{list/vector: attendance disposal}
+\item{colTypeED}{string: column name of the type of ED attendance}
 
-\item{attCategory}{list/vector: attendance category}
+\item{colAttDischarge}{string: column name of the attendance discharge/disposal}
 
-\item{arrivalMode}{list/vector: arrival mode}
+\item{colAttCategory}{string: column name of the  attendance category}
 
-\item{attInvestigations}{data.frame/data.table: all ED investigations}
+\item{colArrivalMode}{string: column name of the arrival mode}
 
-\item{attTreatments}{data.frame/data.table: all ED treatments}
+\item{colsInvestigations}{character vector: column names of all the ED investigations}
 
-\item{clinicalCodeStandard}{character; either snomed or hes}
+\item{colsTreatments}{character vector: column names of all the ED treatments}
 
-\item{numThreads}{integer; number of threads to use}
+\item{clinicalCodeStandard}{string; clinical coding standard to use - either snomed or hes}
+
+\item{nthreads}{integer; number of threads to use}
 }
 \value{
-data.frame with single column containing binary TRUE/FALSE whether avoidable attendance
+logical vector containing binary TRUE/FALSE whether each row is an avoidable attendance
 }
 \description{
 This returns a data.frame with logical vector (TRUE/FALSE) corresponding to
@@ -44,6 +47,6 @@ The code will derive this for either SNOMED or HES codes, and is based upon
 codes published by NHS Digital.
 }
 \examples{
-calculateAvoidableEDAtt(df[,1],df[,2],df[,3],df[,4],df[,5:6],df[,7:9],'snomed',3)
-calculateAvoidableEDAtt(dt[,.(edType)],dt[,.(attDisp)],dt[,.(attCat)],dt[,.(attMode)],dt[,.(inves1,inves2)],dt[,.(treat1,treat2,treat3)],'hes',1)
+calculateAvoidableEDAtt(dt,'Department_Type','Discharge_Status','AttendanceCategory','Arrival_Mode',paste0('Investigation_',1:30),paste0('Treatment_',1:30),'snomed',30)
+calculateAvoidableEDAtt(dt,'Department_Type','Discharge_Status','AttendanceCategory','Arrival_Mode',paste0('Investigation_',1:30),paste0('Treatment_',1:30),'hes',6)
 }
