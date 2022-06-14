@@ -1,3 +1,8 @@
 .Rproj.user
 .Rbuildignore
 .Rhistory
+/src/cpp_derive_avoidable_attendances.o
+/src/cpp_utils.o
+/src/ESAAvoidableAtt.dll
+/src/RcppExports.o
+
