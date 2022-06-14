@@ -7,7 +7,7 @@ The Economics and Strategic Analysis Team, working under the Chief Data and Anal
 This package offers the user the choice of using SNOMED or HES codes to derive the metric. We make use of parallelization, where available, enabled through OpenMP, to enable quicker compute when using R data.frames. The majority of the code is written in **C++17**, requiring that and **Rcpp (>=1.0.8)**. Compiled with GNU compiler in testing. By default, the number of threads is set at 50% of those available on the system, however this can be altered via the setESAAvoidableAttThreads() function, or using the nthreads argument. 
 
 Our package can be installed directly from GitHub using the **devtools** package.
-`devtools::install_github('NHSEngland/ESA_Avoidable_Attendances')`
+`devtools::install_github('NHSEngland/ESA_Avoidable_ED_Attendances')`
 and can be loaded as with any other R package.
 `library(ESAAvoidableAtt)`
 
