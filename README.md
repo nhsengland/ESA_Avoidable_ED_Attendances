@@ -1,7 +1,7 @@
 # 'Avoidable' ED attendances
 
 ## Introduction
-The Economics and Strategic Analysis Team, working under the Chief Data and Analytics Officer (CDAO) at NHS England and NHS Improvement have developed a small package which implements the University of Sheffield's School of Health and Related Research's (ScHARR) definition of 'avoidable' Emergency Department attendances (Mason et al, 2017) with reference to the NHS Digital (2020) adaptation using SNOMED/HES coding. Whilst ECDS superseeds HES, functionality for HES codes is provided for completeness. 
+The Economics and Strategic Analysis Team, working under the Chief Data and Analytics Officer (CDAO) at NHS England have developed a small package which implements the University of Sheffield's School of Health and Related Research's (ScHARR) definition of 'avoidable' Emergency Department attendances (Mason et al, 2017) with reference to the NHS Digital (2020) adaptation using SNOMED/HES coding. Whilst ECDS superseeds HES, functionality for HES codes is provided for completeness. 
 
 ## Usage
 This package offers the user the choice of using SNOMED or HES codes to derive the metric. We make use of parallelization, where available, enabled through OpenMP, to enable quicker compute when using R data.frames. The majority of the code is written in **C++17**, requiring that and **Rcpp (>=1.0.8)**. Compiled with GNU compiler in testing. By default, the number of threads is set at 50% of those available on the system, however this can be altered via the setESAAvoidableAttThreads() function, or using the nthreads argument. 
