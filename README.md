@@ -168,9 +168,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Unless stated otherwise, the codebase is released under [the MIT License](https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/blob/main/LICENSE). This covers both the codebase and any sample code in the documentation.
+Unless stated otherwise, the codebase is released under [the MIT License](https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/blob/main/LICENSE). This covers both the codebase and any sample code in the documentation.
 
-_See [LICENSE](https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/blob/main/LICENSE) for more information._
+_See [LICENSE](https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/blob/main/LICENSE) for more information._
 
 The documentation is [© Crown copyright](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/) and available under the terms of the [Open Government 3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) license.
 
@@ -186,11 +186,11 @@ The documentation is [© Crown copyright](http://www.nationalarchives.gov.uk/inf
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Markdown links -->
-[issues-shield]: https://img.shields.io/github/issues/nhsengland/ESA_ED_Avoidable_Attendances
-[issues-url]: https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/issues
-[forks-shield]: https://img.shields.io/github/forks/nhsengland/ESA_ED_Avoidable_Attendances
-[forks-url]: https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/network/members
-[stars-shield]: https://img.shields.io/github/stars/nhsengland/ESA_ED_Avoidable_Attendances
-[stars-url]: https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/stargazers
-[license-shield]: https://img.shields.io/github/license/nhsengland/ESA_ED_Avoidable_Attendances
-[license-url]: https://github.com/nhsengland/ESA_ED_Avoidable_Attendances/main/blob/LICENSE
+[issues-shield]: https://img.shields.io/github/issues/nhsengland/ESA_Avoidable_ED_Attendances
+[issues-url]: https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/issues
+[forks-shield]: https://img.shields.io/github/forks/nhsengland/ESA_Avoidable_ED_Attendances
+[forks-url]: https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/network/members
+[stars-shield]: https://img.shields.io/github/stars/nhsengland/ESA_Avoidable_ED_Attendances
+[stars-url]: https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/stargazers
+[license-shield]: https://img.shields.io/github/license/nhsengland/ESA_Avoidable_ED_Attendances
+[license-url]: https://github.com/nhsengland/ESA_Avoidable_ED_Attendances/main/blob/LICENSE
